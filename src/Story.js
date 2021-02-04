@@ -57,5 +57,3 @@ class Story extends Component {
 
        
 export default Story;
-
-{/* <a href="https://imgbb.com/"><img src="https://i.ibb.co/1v6K75F/dogie.png" alt="dogie" border="0"></a> */}
