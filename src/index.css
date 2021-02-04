@@ -1,13 +1,225 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+
+/* base styles */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Quicksand";
+  color: #333;
+  font-size: 15px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* NAVIGATION */
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
 }
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.nav-bar-link {
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 6px;  
+}
+.nav-bar-link:hover {
+  background-color: #f05f8b;
+  border-radius: 8px;
+  color: white;
+}
+
+
+/* HOMEPAGE */
+.story-img {
+  justify-self: center;
+  /* margin-top: 20px; */
+  cursor: grab;
+  margin-right: 10px;
+}
+
+
+.top-info {
+display: flex;
+justify-content: center;
+
+}
+
+.home-content {
+  max-width: 600px;
+  margin: 20px auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.home {
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Clicker Script', cursive;
+  font-size: 2em;
+  margin-right: 20px;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+h6 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: small;
+  color: rgb(192, 192, 192);
+}
+
+.btn-count-dogs {
+  margin: .5em;
+}
+
+#dogcount{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+
+/* DOG GALLERY */
+
+.img-gallery {
+  border: 2px solid white;
+  outline: 1px solid gray;
+  margin: 10px;
+}
+
+
+.box-gallery {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  border: 1px dashed #ccc;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-info-inside {
+  margin: 5px;
+  padding: 5px;
+}
+
+.dog-name {
+  font-size: 2em;
+  padding-bottom: 5px;
+  font-family: 'Cookie', cursive;
+}
+
+.dog-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 5px;
+  border: 1px dashed gray;
+  max-width: 60%;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-div-gallery {
+  
+  display: flex;
+  justify-content: center;
+}
+
+.likes-text {
+  font-size: small;
+  font-weight: bold;
+}
+
+.likes-button {
+  font-size: small;
+}
+
+
+/* CONTACTS */
+
+.contact-list li {
+  padding: 5px;
+  list-style: none;
+}
+
+.contact-list {
+  padding: 20px 60px;
+  border: 1px dashed gray;
+}
+
+.dog-data {
+  color: #4f4f4f;
+  font-weight: bold;
+}
+
+.girls {
+  color: #f1356d;
+}
+
+.boys {
+  color: #0093A7;
+
+}
+.contact {
+  margin-left: 20px;
+  display: flex;
+  padding: 20px;
+  justify-items: center;
+  
+}
+.container-contacts {
+  display: flex;
+  justify-content: center;
+}
+.find-us {
+  color: #f1356d;
+  font-size: 1.2em;
+}
+
+/* STORY */
+
+.main-about {
+  display: flex;
+  align-items: space-between;
+  border: 1px dashed rgb(184, 184, 184);
+  padding: 15px;
+  width: 60%;
+  align-items:center;
+}
+
+.img-box-about {
+  display: flex;
+  align-items: center;
+}
+
+.about-us-container {
+  display: flex;
+  justify-content:center;
+}
+
+.txt-box-about h1,h3 {
+  margin: 10px 0px;
+}
+
+.story-img {
+  float: center;
+}
+
